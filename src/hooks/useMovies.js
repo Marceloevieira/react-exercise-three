@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { MovieService } from "../services/MoviesService";
+import { MovieService } from "../services/MovieService";
 
 export const useMovies = () => {
 

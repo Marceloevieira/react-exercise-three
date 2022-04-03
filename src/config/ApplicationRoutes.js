@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import { About } from "../views/About";
 import { Home } from "../views/Home";
+import { Movie } from "../views/Movie";
 import { NotFound } from "../views/NotFound";
 
 export const ApplicationRoutes = () => (
 
     <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/about" exact element={<About />}/>
+        <Route path="/movie/:id" exact element={<Movie />}/>
         <Route path="*" element={<NotFound />} />
     </Routes>
 

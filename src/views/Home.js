@@ -5,10 +5,11 @@ import { useMovies } from "../hooks/useMovies";
 export const Home = () => {
 
     const movies = useMovies();
-
-    console.log(movies);
+  //  console.log(movies);
     return (
-        <main>
+        <main 
+        className={'mx-2'}
+        >
             <MoviesList movies={movies} />
         </main>
     );

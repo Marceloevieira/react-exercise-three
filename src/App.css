@@ -1,3 +1,80 @@
 .App {
   text-align: center;
 }
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+.rating-border {
+  width: 100px; 
+  height: 100px; 
+  
+  display: block; border-radius: 50%;  
+  position: relative;
+ 
+ }
+ 
+ .rating-content{
+     width: 80px; 
+     height: 80px; 
+     background-color: black;
+     color: white; 
+     position: absolute; 
+     border-radius: 50%; 
+     top: 0; 
+     right: 0; 
+     left:0; 
+     bottom: 0; 
+     margin:  auto; 
+     display: flex; 
+     flex-direction: 
+     column; 
+     justify-content: center;
+ }
+ 
+ 
+
+.back-ground-movie{
+  opacity: 1;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  transition: opacity 200ms ease 0s;
+  width: 100%;
+  z-index: -1;
+}
+
+.darknes-background{
+
+  background-image: radial-gradient(farthest-side at 73% 21%, transparent, rgb(26, 29, 41));
+  position: absolute;
+  inset: 0px;
+}
+
+::-webkit-scrollbar{
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(219,219,219, 1);
+  border-radius: 20px;
+}
+
+
+
+span.certification{
+  border: 1px solid rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.6);
+  padding: 0.06em 4px 0.15em 4px !important;
+  line-height: 1;
+  border-radius: 2px;
+}
