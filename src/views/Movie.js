@@ -37,10 +37,12 @@ export const Movie = () => {
             </div>
 
             <Row>
-                <Col md={3}>
-                    <Image src={`https://image.tmdb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`}></Image>
+                <Col >
+                    <Image
+                    fluid
+                    src={`https://image.tmdb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`}></Image>
                 </Col>
-                <Col>
+                <Col md={9}>
                     <p
                         className={'shadow-lg  rounded text-start'}
                     >
@@ -106,7 +108,7 @@ export const Movie = () => {
                     >
                         Sinopse
                     </h3>
-                    <p className={'shadow-lg rounded'}>
+                    <p className={'shadow-lg rounded '}>
                         {movie.overview}
                     </p>
 

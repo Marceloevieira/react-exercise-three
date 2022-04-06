@@ -13,7 +13,7 @@ export const MovieCard = ({ movie: { id, title, release_date, poster_path } }) =
             style={{ width: '18rem', cursor: 'pointer' }}
             onClick={(e) => window.location = `/movie/${id}`}
         >
-            <Card.Img variant="top" src={`https://image.tmdb.org/t/p/original/${poster_path}`} />
+            <Card.Img  variant="top" src={`https://image.tmdb.org/t/p/original/${poster_path}`} />
             <Card.Body>
                 <Card.Title
                     style={{ cursor: 'pointer' }}

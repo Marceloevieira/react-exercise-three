@@ -8,7 +8,7 @@ export const Header = () => (
     >
         <Navbar bg="light" expand={false}>
             <Container fluid>
-                <Navbar.Brand href="#">
+                <Navbar.Brand href="/">
                     <img src={logo} alt={'logo'} className="App-logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -38,8 +38,13 @@ export const Header = () => (
                 </Navbar.Offcanvas>
             </Container>
         </Navbar>
-        <h1>Aplicação SPA - Movies</h1>
-        <h2>Bem-vindo(a) a nossa aplicação de filmes</h2>
+        <h1
+            className={'pt-3'}
+            style={{ textShadow: ' 0 0 5px white' }}
+        >Aplicação SPA - Movies</h1>
+        <h2
+            style={{ textShadow: ' 0 0 5px white' }}
+        >Bem-vindo(a) a nossa aplicação de filmes</h2>
     </header>
 
 );
